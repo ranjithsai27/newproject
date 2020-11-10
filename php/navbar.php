@@ -8,7 +8,6 @@
         <li><a href="./fetch.php">Fetech Data</a></li>
         <li><a href="#">Update Data</a></li>
         <li><a href="#">Delete</a></li>
-        <li><a href="#">Delete</a></li>
       </ul>
     </div>
   </nav>
