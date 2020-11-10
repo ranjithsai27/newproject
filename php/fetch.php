@@ -14,7 +14,7 @@
         include_once('navbar.php');
 
         $fetch_query =  mysqli_query($con,"select * from sai");
-        $query_rows = mysqli_num_rows($fetch_query);
+        $query_rows = mysqli_reult($fetch_query);
         
 
         if($query_rows > 0){
