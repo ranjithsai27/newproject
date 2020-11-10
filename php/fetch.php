@@ -12,6 +12,7 @@
     <?php
         include_once('db_config.php');
         include_once('navbar.php');
+    
 
         $fetch_query =  mysqli_query($con,"select * from users");
         $query_rows = mysqli_num_rows($fetch_query);
