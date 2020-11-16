@@ -19,11 +19,11 @@
         
 
         if($query_rows > 0){
-            echo "<table class='table table-bordered'><tr><th>Name</th><th>Mobile</th><th>Email</th></tr>";
+            echo "<table class='table table-bordered'><tr><th>Name</th><th>Mobile</th><th>Email</th>";
             while($row = mysqli_fetch_array($fetch_query)){ 
                 echo "<tr><td>".$row['name']."</td>";
                 echo "<td>".$row['mobile']."</td>";
-                echo "<td>".$row['email']."</td></tr>";
+                echo "<td>".$row['email']."</td> </tr>";
             }
             echo "</table>";
             

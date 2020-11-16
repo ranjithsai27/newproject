@@ -10,6 +10,7 @@ function inserData(){
     $name = $_POST['uname'];
     $mobile = $_POST['umobile'];
     $email = $_POST['uemail'];
+   
     
     $ins_query = mysqli_query($con, "INSERT INTO users (name, mobile, email) VALUES ('$name','$mobile','$email')");
     
