@@ -9,3 +9,12 @@
   outline: none !important;
   margin-left: 10px;
 }
+
+.container-fluid{
+  background-color: navy;
+  color: white;
+}
+.navbar-header{
+  margin: 20px;
+  
+}
