@@ -25,6 +25,7 @@
                     <input type="text" name="Price" class="Price form-control" placeholder="Price">
                     <input type="submit" value="add" name="submit" class="btn btn-primary login_btn" id="myloginbtn">
                 </form>
+
             </div>
         </div>
     </div>
