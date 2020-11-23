@@ -2,9 +2,9 @@
 
 include_once('db_config.php');
 
-$user_title = $_GET['title'];
-if($user_title != NULL){
-    $delet_query = mysqli_query($con,"DELETE FROM store WHERE id=$user_title ");
+$user_id = $_GET['id'];
+if($user_id != NULL){
+    $delet_query = mysqli_query($con,"DELETE FROM store WHERE id=$user_id");
     if($delet_query){
         header("location: fetch.php");
     }

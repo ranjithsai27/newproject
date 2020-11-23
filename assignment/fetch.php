@@ -18,14 +18,14 @@
         
 
         if($query_rows > 0){
-            echo "<table class='table table-bordered'><tr><th>title</th><th>author</th><th>publisher</th><th></th><th>genre</th><th>price</th></tr>";
+            echo "<table class='table table-bordered'><tr><th>Title</th><th>Author</th><th>Publisher</th><th>Genre</th><th>Price</th></tr>";
             while($row = mysqli_fetch_array($fetch_query)){ 
-                echo "<tr><td>".$row['title']."</td>";
-                echo "<td>".$row['author']."</td>";
-                echo "<td>".$row['publisher']."</td>";
-                echo "<td>".$row['genre']."</td>"; 
-                echo "<td>".$row['price']."</td>";
-                echo "<td> <a href='./delete.php?id=".$row['title']."'><button class='btn btn-danger'>Delete</button></a> <a href='./edit.php?id=".$row['title']."'> <button class='btn btn-success'>Update</button></a></td></tr>";
+                echo "<tr><td>".$row['Title']."</td>";
+                echo "<td>".$row['Author']."</td>";
+                echo "<td>".$row['Publisher']."</td>";
+                echo "<td>".$row['Genre']."</td>";
+                echo "<td>".$row['Price']."</td>";
+                echo "<td> <a href='./delete.php?id=".$row['id']."'><button class='btn btn-danger'>Delete</button></a> <a href='./edit.php?id=".$row['id']."'> <button class='btn btn-success'>Update</button></a></td></tr>";
             }
             echo "</table>";
             

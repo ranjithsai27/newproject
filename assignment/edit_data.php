@@ -1,25 +1,32 @@
 <?php
 
 
-if(isset($_POST['adding'])){
+if(isset($_POST['submit'])){
     inserData();
 }
 
 
 function inserData(){
-    
+    $edit_id = $_GET['id'];
     include_once('db_config.php');
-    $title = $_POST['utitle'];
-    $author = $_POST['uauthor'];
-    $publisher = $_POST['upublisher'];
-    $genre = $_POST['ugenre'];
-    $price = $_POST['uprice'];
-
+    $Title = $_POST['Title'];
+    $Author = $_POST['Author'];
+    $Publisher = $_POST['Publisher'];
+    $Genre = $_POST['Genre'];
+    $Price = $_POST['Price'];
+    
     $ins_query = mysqli_query($con, "UPDATE store
-    SET title = '$title', author= '$author', publisher= '$publisher', genre= '$genre', price= '$price' WHERE id=$edit_title");
+    SET Title = '$Title',Author = '$Author', Publisher= '$Publisher',Genre = '$Genre', Price= '$Price'
+    WHERE id = $edit_id");
     
     if($ins_query){
         header("location: fetch.php");
     }
 }
+
+
+
+
+
+
 ?>
