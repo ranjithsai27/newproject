@@ -17,6 +17,7 @@ $(document).ready(function(){
         var mobile  = $("#mobile").val();
         var pass  = $("#pwd").val();
         var name  = $("#name").val();
+        var pincode  = $("#pincode").val();
         var user_id = "";
         if(id == "" || id == null){
             user_id = "NAN";
@@ -28,6 +29,7 @@ $(document).ready(function(){
             "email":email,
             "mobile":mobile,
             "password":pass,
+            "pincode":pincode,
             "type":type,
             "id":user_id
         }
@@ -68,6 +70,7 @@ $(document).ready(function(){
                     <td>`+e.name+` </td>
                     <td>`+e.mobile+`</td>
                     <td>`+e.email+`</td>
+                    <td>`+e.pincode+`</td>
                     <td><button class="btn btn-danger delete_btn" data-btnid=`+e.id+` title="Delete record"><i class="fa fa-trash"></i> </button> <button class="btn btn-primary data_edit" data-btnid=`+e.id+` title="edit record"><i class="fa fa-pencil"></i></button></td>
                   </tr>`;
                 });
@@ -127,6 +130,7 @@ $(document).ready(function(){
                     $("#name").val(e.name);
                     $("#mobile").val(e.mobile);
                     $("#pwd").val(e.password);
+                    $("#pincode").val(e.pincode);
                     $(".dbform").removeClass('myform').addClass('updateForm');
                 })
             }

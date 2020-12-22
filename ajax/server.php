@@ -12,7 +12,9 @@ if($_POST['type'] == "insert_data"){
     
     $pass = $_POST['password'];
 
-    $insert_query = mysqli_query($con,"insert into users(name,email,mobile,password) values('$name','$email','$mobile','$pass')");
+    $pincode = $_POST['pincode'];
+    
+    $insert_query = mysqli_query($con,"insert into users(name,email,mobile,password,pincode) values('$name','$email','$mobile','$pass','$pincode')");
 
     if($insert_query){
         echo "Data inserted";
@@ -34,9 +36,11 @@ if($_POST['type'] == "update_data"){
     
     $pass = $_POST['password'];
 
+    $pincode = $_POST['pincode'];
+
     $user_id= $_POST['id'];
 
-    $insert_query = mysqli_query($con,"update  users set name='$name',email='$email', mobile='$mobile',password='$pass' where id=$user_id");
+    $insert_query = mysqli_query($con,"update  users set name='$name',email='$email', mobile='$mobile',password='$pass',pincode='$pincode' where id=$user_id");
 
     if($insert_query){
         echo "Data updated";
