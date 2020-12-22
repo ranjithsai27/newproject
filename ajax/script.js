@@ -105,6 +105,7 @@ $(document).ready(function(){
             }
         })
     });
+    
 
     $(document).on('click','.data_edit',function(){
         var up_id = $(this).attr("data-btnid");
