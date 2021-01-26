@@ -8,3 +8,8 @@ table tr th{
     margin-left: auto;
     margin-right: auto;
   }
+
+  a{
+      padding: 30%;
+      
+  }
